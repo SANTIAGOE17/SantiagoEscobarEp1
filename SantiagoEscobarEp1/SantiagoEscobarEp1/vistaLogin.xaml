@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SantiagoEscobarEp1.vistaLogin">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#254099">
+                <Label Text="Examen" HorizontalTextAlignment="Center" FontSize="25" TextColor="#fff"/>
+            </Frame>
+
+            <Image Source="LOGO_UISRAEL.png"/>
+
+            <Entry x:Name="txtUsuario" Placeholder="Usuario" HorizontalTextAlignment="Center" FontSize="20"/>
+            <Entry x:Name="txtPasswd" IsPassword="True" Placeholder="Password" HorizontalTextAlignment="Center"/>
+
+            <Button x:Name="btnAbrir" Clicked="btnAbrir_Clicked" Text="Acceder" 
+                    BackgroundColor="#254099" TextColor="#fff" FontSize="20"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
