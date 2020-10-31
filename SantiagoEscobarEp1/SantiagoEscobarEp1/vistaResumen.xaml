@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SantiagoEscobarEp1.vistaResumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#254099">
+                <Label x:Name="lblUsuario" Text="" HorizontalTextAlignment="Center" FontSize="25" TextColor="#fff"/>
+            </Frame>
+            <Label Text="Resumen" BackgroundColor="#254099" HorizontalTextAlignment="Center" FontSize="25" TextColor="#fff"/>
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Text="Nombre: " FontSize="20"/>
+                <Entry x:Name="txtNombre" Grid.Row="0" IsReadOnly="True" Grid.Column="1" FontSize="20"/>
+
+                <Label Grid.Row="1" Grid.Column="0" Text="Total a pagar: " FontSize="20"/>
+                <Entry x:Name="txtTotak" Keyboard="Numeric" IsReadOnly="True" Grid.Row="1" Grid.Column="1" FontSize="20"/>
+
+                <Label Grid.Row="2" Grid.Column="0" Text="Cuotas mensuales: " FontSize="20"/>
+                <Entry x:Name="txtCuotas" Keyboard="Numeric" IsReadOnly="True" Grid.Row="2" Grid.Column="1" FontSize="20"/>
+
+
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
